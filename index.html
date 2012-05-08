@@ -1,28 +1,11 @@
 <html>
-<head>
-<script src="raphael.js"></script>
-<script>
-
-
-var ut_color = '#00853f';
-
-data = [[0,100],[100,100],[200,100],[300,100]];
-
-
-window.onload = function () {
-                var W = 640;
-                    H = 480;
-                    r = Raphael("holder", W, H);
-                    len = 7;
-
-	                r.path("M"+data[0][0]+","+data[0][1]+"L"+data[1][0]+","+data[1][1]).attr({stroke: ut_color, 'stroke-width':5});
-
-	                r.ellipse(data[1][0],data[1][1],6,6).attr({fill: ut_color, stroke: ut_color});
-            }
-</script>
-</head>
-
-<body>
-<div id="holder"></div>         
-</body>
+<script language="JavaScript" src="2dgeometry.js"></script>
+<script language="JavaScript" src="elements.js"></script>
+<script language="JavaScript" src="index.js"></script>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+ 
+<div id="datepicker" style="position:absolute;top:10px;left:900px;font-size:58.5%"></div>
+<canvas id="mycanvas" width="800" height="300" style="position:absolute;top:0px;left:0px"></canvas>
 </html>
